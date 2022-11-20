@@ -1,3 +1,5 @@
+import Score from "./Score";
+
 export default function Student ({ students }) {
     return (
         <ul>
@@ -8,6 +10,9 @@ export default function Student ({ students }) {
 
                     <div>
                         <label><strong>Score Information</strong></label>
+                        <Score 
+                        student= {student}
+                        idx={idx} />
                     </div>
 
                 </li>
